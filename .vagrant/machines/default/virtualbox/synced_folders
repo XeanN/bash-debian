@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/home/angel/Escritorio/vagrant/bash-debian-main/src","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/angel/Escritorio/vagrant/bash-debian-main","disabled":false,"__vagrantfile":true}}}
