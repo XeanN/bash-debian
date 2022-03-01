@@ -17,11 +17,9 @@ fi
 apt-get update
 
 echo "install postgresql version ${PGVERSION}"
-# -qq implies -y --force-yes
-
-apt-get -qq install "postgresql-server-dev-$PGVERSION" "postgresql-contrib-$PGVERSION" "postgresql-plpython-$PGVERSION"
+# -qq implies -y --force-
+apt-get -qq install "postgresql-server-$PGVERSION" "postgresql-contrib-$PGVERSION" "postgresql-plpython-$PGVERSION"
 
 service postgresql restart
-
-psql -d postgres -f /home/angel/Escritorio/vagrant/bash-debian-main/src/peru.sql
+sudo -u postgres psql -d postgres -f /vagrant/src/peru.sql
 echo "Successfully created postgres dev virtual machine with Postgres"
